@@ -32,7 +32,7 @@ namespace EntityFrameworkDemo
         {
             using (ETradeContext context = new ETradeContext())
             {
-                var entity = context.Entry(product); // context üzerinden abone ol dedik.Veri tabanındaki product ile eşitliyor.
+                var entity = context.Entry(product); 
                 entity.State = System.Data.Entity.EntityState.Modified;                                       
                 context.SaveChanges();
             }
@@ -43,7 +43,7 @@ namespace EntityFrameworkDemo
         {
             using (ETradeContext context = new ETradeContext())
             {
-                var entity = context.Entry(product); // context üzerinden abone ol dedik.Veri tabanındaki product ile eşitliyor.
+                var entity = context.Entry(product);
                 entity.State = System.Data.Entity.EntityState.Deleted;
                 context.SaveChanges();
             }
